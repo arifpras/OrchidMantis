@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "name": "DJPPR Communication Deck — Typography Tokens",
+    "source": "Strategi Komunikasi DJPPR Semester II (29 Juni 2021)",
+    "extractionMethod": "Read directly from the PDF's embedded font table (pdffonts) — this is exact, not visually estimated.",
+    "confidenceNote": "Font family names are high-confidence (from embedded font subsets). Sizes/weights below are visually estimated from slide layout and should be treated as a starting point, not measured values."
+  },
+  "fontFamilies": {
+    "display": {
+      "family": "Gotham Narrow",
+      "weightsUsed": ["Black", "Bold", "Medium", "Book (Regular)", "Light", "Book Italic"],
+      "usage": "All headlines, slide titles, card/badge labels, stat numbers. This is the deck's primary and most distinctive typeface — a condensed geometric sans.",
+      "webFallback": "Oswald, Barlow Condensed, or Bebas Neue (condensed geometric sans) if Gotham Narrow is unlicensed for web use."
+    },
+    "body": {
+      "family": "Arial",
+      "weightsUsed": ["Regular", "Bold", "Italic"],
+      "usage": "Body copy, bullet lists, table content on several content slides.",
+      "webFallback": "Arial / Helvetica / system-ui (already near-universal)."
+    },
+    "bodyAlt": {
+      "family": "Calibri",
+      "weightsUsed": ["Regular", "Italic"],
+      "usage": "Body copy / table content on a subset of slides (likely default PowerPoint theme font carried over from source content).",
+      "webFallback": "Calibri / Carlito / system-ui."
+    },
+    "iconography": {
+      "family": "Wingdings",
+      "usage": "A handful of inline glyph bullets — not meaningful outside PowerPoint; replace with a proper icon set (e.g. the outline-style icons already used elsewhere in the deck) rather than porting this font."
+    }
+  },
+  "scale": {
+    "note": "Estimated from slide proportions (1334x750 reference canvas), not measured. Treat as a reasonable starting ratio.",
+    "sectionDividerTitle": { "size": "40-44px equiv", "weight": "Bold/Black", "case": "sentence or Title Case", "color": "core.textOnDark" },
+    "slideTitle": { "size": "26-28px equiv", "weight": "Bold", "color": "core.textDark or core.purple" },
+    "slideSubtitle": { "size": "16-18px equiv", "weight": "Regular Italic or Book", "color": "core.purple, lighter tint" },
+    "cardTitle": { "size": "18-20px equiv", "weight": "Bold/Medium", "color": "core.textOnDark" },
+    "body": { "size": "13-15px equiv", "weight": "Regular", "color": "core.textDark or core.textOnDark depending on background" },
+    "statNumber": { "size": "22-26px equiv", "weight": "Black/Bold", "color": "core.purple or core.textOnDark" },
+    "kicker": { "size": "11-12px equiv", "weight": "Bold", "case": "UPPERCASE", "usage": "small labels inside pill badges" }
+  }
+}

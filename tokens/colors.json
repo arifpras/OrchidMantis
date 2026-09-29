@@ -1,0 +1,92 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "DJPPR Communication Deck — Color Tokens",
+    "source": "Strategi Komunikasi DJPPR Semester II (29 Juni 2021)",
+    "extractionMethod": "Pixel-sampled from rendered slide PNGs (200dpi) using median/dominant-color clustering",
+    "confidenceNote": "core.* tokens are high-confidence (consistent across 3+ independent samples). accent.* and program.* tokens are lower-confidence (1-2 samples, may include JPEG/render artifacts) — verify against the source .pptx or Kemenkeu brand guideline before pixel-critical use."
+  },
+  "core": {
+    "purple": {
+      "value": "#6C007D",
+      "confidence": "high",
+      "usage": "Primary brand color. Section headings, small square bullet icons, badge pills, body accent text."
+    },
+    "gold": {
+      "value": "#FFC000",
+      "confidence": "high",
+      "usage": "Primary accent color. Full-bleed section backgrounds, small square header icons, divider-slide side bars, stat highlight boxes."
+    },
+    "magentaPink": {
+      "value": "#D0208A",
+      "confidence": "high",
+      "usage": "Secondary accent. Underline rules beneath headlines, gradient end-stop (see gradient.heroPurpleMagenta)."
+    },
+    "navy": {
+      "value": "#002060",
+      "confidence": "high",
+      "usage": "Icon fills on the circular roadmap/outline diagram; occasional dark accent."
+    },
+    "lightBlue": {
+      "value": "#B4C7E7",
+      "confidence": "medium",
+      "usage": "Thin arc / connector lines on the outline (agenda) slide."
+    },
+    "neutralGray": {
+      "value": "#ABAAAA",
+      "confidence": "medium",
+      "usage": "Secondary arc / connector lines on the outline slide; muted dividers."
+    },
+    "plum": {
+      "value": "#7C3F84",
+      "confidence": "medium",
+      "usage": "Solid banner block (bottom-left of title/closing slides) — a flatter, less saturated purple than core.purple."
+    },
+    "pageBackground": {
+      "value": "#F5F6F8",
+      "confidence": "high",
+      "usage": "Default light slide background, and the tint used behind the hero photo overlay."
+    },
+    "textDark": {
+      "value": "#2A2A2A",
+      "confidence": "medium",
+      "usage": "Default body copy on light backgrounds (approximation; body text also renders nearly black)."
+    },
+    "textOnDark": {
+      "value": "#FFFFFF",
+      "confidence": "high",
+      "usage": "Text/labels set on purple, magenta, or gold fills."
+    }
+  },
+  "gradient": {
+    "heroPurpleMagenta": {
+      "stops": ["#6B1F6B", "#8B5890", "#C0208A"],
+      "direction": "diagonal / radial, deep purple to magenta-pink",
+      "confidence": "high",
+      "usage": "The deck's signature gradient. Used on: (1) full-bleed section-divider slides layered over a dimmed building/architecture photo, (2) solid card/panel fills for program call-out boxes (InFest, Talkshow, community program cards)."
+    }
+  },
+  "decorativeCluster": {
+    "description": "A 4-color folded-triangle motif in the bottom-right corner of title/closing slides, echoing the djppr logo's folded-corner mark.",
+    "colors": {
+      "gold": "#FFC000",
+      "orange": "#F06020",
+      "amber": "#D87020",
+      "magenta": "#A03090"
+    },
+    "confidence": "medium"
+  },
+  "programAccents": {
+    "description": "Colors specific to named sub-programs shown in the deck. Lower confidence — sampled once, only relevant if replicating that specific program's collateral rather than the general DJPPR system.",
+    "infestInkubasiTeal": {
+      "value": "#2FA888",
+      "confidence": "low",
+      "usage": "InFest Inkubasi DJPPR 'Financial Educator' sub-brand logo/key-visual accent (teal, paired with black)."
+    },
+    "mentorBadgeRose": {
+      "value": "#A04878",
+      "confidence": "low",
+      "usage": "Dusty-rose name-tag pill under 'Calon Mentor' headshot grids."
+    }
+  }
+}

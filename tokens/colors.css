@@ -1,0 +1,31 @@
+/*
+ * DJPPR Communication Deck — Color Tokens (CSS custom properties)
+ * Source: Strategi Komunikasi DJPPR Semester II (29 Juni 2021)
+ * See ../docs/design-system.md for full usage guidance and confidence notes.
+ */
+
+:root {
+  /* Core palette (high confidence) */
+  --djppr-purple: #6C007D;
+  --djppr-gold: #FFC000;
+  --djppr-magenta-pink: #D0208A;
+  --djppr-navy: #002060;
+  --djppr-light-blue: #B4C7E7;
+  --djppr-neutral-gray: #ABAAAA;
+  --djppr-plum: #7C3F84;
+  --djppr-page-bg: #F5F6F8;
+  --djppr-text-dark: #2A2A2A;
+  --djppr-text-on-dark: #FFFFFF;
+
+  /* Signature hero gradient (divider slides & program cards) */
+  --djppr-gradient-hero: linear-gradient(135deg, #6B1F6B 0%, #8B5890 50%, #C0208A 100%);
+
+  /* Decorative corner-triangle cluster */
+  --djppr-decor-orange: #F06020;
+  --djppr-decor-amber: #D87020;
+  --djppr-decor-magenta: #A03090;
+
+  /* Program-specific accents (low confidence — see colors.json) */
+  --djppr-infest-teal: #2FA888;
+  --djppr-mentor-rose: #A04878;
+}
